@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>오징어</title>
+    <title>Flying Text</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>오징어</h1>
-    
+    <input type="text" id="inputText" placeholder="여기에 텍스트를 입력하세요...">
+    <button onclick="flyText()">텍스트 날리기!</button>
+    <button onclick="deleteOldestText()">가장 예전 거 삭제</button>
+    <button onclick="clearAllText()">전체 초기화</button>
+    <div id="flyingArea"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
