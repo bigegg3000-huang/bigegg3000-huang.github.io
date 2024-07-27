@@ -1,12 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성적 계산기 version3</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <p>Hello, World!</p>
+    <header>
+        <h1 class="title">성적 계산기</h1>
+        <h2 class="subtitle">version3</h2>
+    </header>
+    <form id="gradeForm">
+        <div>
+            <label for="numSubjects">과목 수:</label>
+            <input type="number" id="numSubjects" name="numSubjects" min="1">
+        </div>
+        <button type="button" onclick="generateInputs()">입력 창 생성</button>
+        <div id="subjectsContainer"></div>
+        <div>
+            <button type="button" onclick="calculateScores()">계산하기</button>
+        </div>
+    </form>
+    <div id="result">
+        <h2>결과:</h2>
+        <p id="universityScore"></p>
+        <p id="averageScore"></p>
+    </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
